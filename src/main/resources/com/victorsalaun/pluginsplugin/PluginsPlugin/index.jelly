@@ -3,6 +3,9 @@
   <l:layout title="pluginsplugin">
     <l:main-panel>
       <h1>Plugins list</h1>
+      <j:forEach var="plugin" items="${it.pluginsList}">
+        <p>${plugin.displayName} - ${plugin.version}</p>
+      </j:forEach>
     </l:main-panel>
   </l:layout>
 </j:jelly>

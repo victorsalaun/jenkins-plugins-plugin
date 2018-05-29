@@ -1,2 +1,15 @@
-target
-work
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+cmake-build-debug/
+cmake-build-release/
+*.iws
+*.iml
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+target/
+work/
