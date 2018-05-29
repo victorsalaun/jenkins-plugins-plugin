@@ -1,7 +1,6 @@
 package com.victorsalaun.pluginsplugin;
 
 import hudson.Extension;
-import hudson.Functions;
 import hudson.PluginWrapper;
 import hudson.model.UnprotectedRootAction;
 import jenkins.model.Jenkins;
@@ -15,7 +14,7 @@ public class PluginsPlugin implements UnprotectedRootAction {
 
     @Override
     public String getIconFileName() {
-        return Functions.getResourcePath() + "/icon.png";
+        return "/plugin/plugins-plugin/icon.png";
     }
 
     @Override
