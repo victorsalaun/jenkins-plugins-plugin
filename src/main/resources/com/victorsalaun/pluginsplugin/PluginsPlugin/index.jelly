@@ -6,6 +6,11 @@
       <j:forEach var="plugin" items="${it.pluginsList}">
         <p>${plugin.displayName} - ${plugin.version}</p>
       </j:forEach>
+
+      <h1>Shared Libraries list</h1>
+      <j:forEach var="lib" items="${it.sharedLibrariesList}">
+        <p>${lib.name} - ${lib.defaultVersion}</p>
+      </j:forEach>
     </l:main-panel>
   </l:layout>
 </j:jelly>

@@ -4,6 +4,8 @@ import hudson.Extension;
 import hudson.PluginWrapper;
 import hudson.model.UnprotectedRootAction;
 import jenkins.model.Jenkins;
+import org.jenkinsci.plugins.workflow.libs.GlobalLibraries;
+import org.jenkinsci.plugins.workflow.libs.LibraryConfiguration;
 
 import java.util.List;
 
@@ -29,6 +31,10 @@ public class PluginsPlugin implements UnprotectedRootAction {
 
     public List<PluginWrapper> getPluginsList() {
         return Jenkins.getActiveInstance().getPluginManager().getPlugins();
+    }
+
+    public List<LibraryConfiguration> getSharedLibrariesList() {
+        return GlobalLibraries.get().getLibraries();
     }
 
 }
